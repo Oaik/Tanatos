@@ -1,0 +1,198 @@
+// Tantaos Theme 
+// Auother: Omar
+
+// Import Variables
+@import var
+
+
+// Reset some properties of bootstrap
+body
+	font-family: 'Open Sans', sans-serif
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background-color: transparent
+	&:hover 
+		color: $oracolor !important
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+	color: $oracolor !important
+
+// Start Default settings
+section
+	margin: 70px 0
+// Start Header
+
+header
+	color: #FFF
+	background: url("../img/header.jpg") 50% 50% fixed
+	background-size: cover
+	position: relative
+	.overlay,.overlay-nav
+		background-color: $blacolor
+	.overlay 
+		display: flex
+		flex-direction: column
+		justify-content: center
+		min-height: 90vh
+
+	nav
+		background-color: transparent !important
+		border: 0 !important
+		margin-bottom: 0 !important
+	span
+		color: $oracolor
+	a 
+		color: #FFF !important
+		transition: .5s all ease-in
+	h1 
+		font-size: 3.5em
+	.buttons
+		margin-top: 40px
+		margin-bottom: 15px
+		a 
+			margin-right: 15px
+			padding: 10px 40px
+			border-radius: 10px
+			text-decoration: none
+			border: 1px solid #DDD
+			&:last-of-type
+				margin-right: 0
+			&:hover
+				background-color: $oracolor
+	.scroll-down
+		position: absolute
+		bottom: 15px
+		left: calc(50% - 25px)
+		i 
+			color: #FFF
+			padding: 5px
+			border: 1px solid #DDD
+			border-radius: 50%
+
+// End Header	
+// Start Services
+
+#service
+	.serv 
+		padding: 30px 0
+		i 
+			border: 1px solid #DDD
+			border-radius: 50%
+			width: 140px
+			height: 140px
+			line-height: 140px
+			color: $oracolor
+			transition: .5s all ease-in-out
+			&:hover 
+				background-color: $oracolor
+				color: #FFF
+
+#newsletter
+	background: url("../img/newsletter.jpg") 50% 50% fixed
+	background-size: cover
+	.overlay 
+		min-height: 20vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+		background-color: $blacolor
+		input[type="email"],button 
+			border-radius: 10px
+			height: 40px
+			margin: 15px 0
+		button 
+			background-color: $oracolor
+			border: 0
+			outline: none
+			color: #FFF
+
+section#ourwork
+	.info
+		margin-bottom: 30px
+		h2 span
+			color: $oracolor
+		p 
+			font-size: 1.2em
+	.image-holder
+		padding: 15px 0
+	.show-more
+		margin-top: 50px
+		a 
+			color: $blacolor
+			padding: 10px 35px
+			border-radius: 10px
+			border: 1px solid #DDD
+			text-decoration: none
+			transition: .5s all ease-out
+			&:hover 
+				background-color: $oracolor
+				border: 1px solid transparent
+				color: #FFF
+
+#testi
+	background: url("../img/test.jpg") 50% 50% fixed
+	background-size: cover
+	color: #FFF
+	.container
+		position: relative
+	.overlay 
+		background-color: $blacolor
+		min-height: 70vh
+		display: flex
+		align-items: center
+		.client
+			padding: 0 50px
+			.img-holder
+				margin-bottom: 35px
+				img 
+					border-radius: 50%
+			.info h3
+				margin-bottom: 35px
+	.fa-angle-left,.fa-angle-right
+		color: #6f7478
+		position: absolute
+		bottom: 50%
+		cursor: pointer
+		transition: .5s all ease-out
+		&:hover 
+			color: $oracolor
+	.fa-angle-right
+		right: 0
+	.fa-angle-left
+		left: 0
+
+#team
+	.info
+		margin-bottom: 50px
+		span 
+			color: $oracolor
+		p 
+			font-size: 1.2em
+	.team
+		margin: 10px
+		padding: 10px 0
+		-webkit-filter: grayscale(100%)
+		filter: grayscale(100%)
+		color: #6f7478
+		transition: .5s all ease-in-out
+		img 
+			transition: .5s all ease-in-out
+		.social
+			margin: 20px 0
+			i 
+				padding: 5px
+				margin: 5px
+				background-color: $oracolor
+				color: #FFF
+				border-radius: 50%
+				width: 40px
+				height: 40px
+				line-height: 30px
+		&:hover 
+			-webkit-filter: grayscale(0%)
+			filter: grayscale(0%)
+			color: #000
+			img 
+				transform: scale(1.1)
+				border-bottom: 3px solid $oracolor
+@media (max-width: 767px) 
+	input 
+		margin-top: 40px !important

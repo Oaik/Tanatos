@@ -1,0 +1,242 @@
+doctype html
+head 
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Tanatos Responsive theme
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet")
+	link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+	link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet")
+	link(href="css/style.css" rel="stylesheet")
+
+
+body 
+	// Start Header
+	header
+		.overlay-nav
+			nav.navbar.navbar-default.navbar-fixed-top
+					.container
+						.navbar-header
+							// Nav-bar Header the Brand and the collapse button
+							button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false") 
+								.icon-bar
+								.icon-bar
+								.icon-bar
+
+							a(href="#").navbar-brand Tanatos
+								span Studio
+						// Links of the nav bar at the right side of the nav
+						#collapse-nav.collapse.navbar-collapse.pull-right
+							ul.nav.navbar-nav
+								li.text-uppercase.text-center.active: a(href="#") Home
+								li.text-uppercase.text-center: a(href="#") About us
+								li.text-uppercase.text-center: a(href="#") Services
+								li.text-uppercase.text-center: a(href="#") Our work
+								li.text-uppercase.text-center: a(href="#") Contact
+								hr
+
+		// Start Nav-Bar 
+		.overlay
+			
+			// Start Header Info
+			.header-info
+				.container.text-center
+					.row
+						.col-sm-6.col-sm-offset-3.col-md-offset-3.col-lg-offset-3
+							h1.text-uppercase: strong We Desin 
+								span Things
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+				// Buttons
+				.buttons.text-center.container
+					a.text-uppercase(href="#") Hire us
+					a.text-uppercase(href="#") Our work
+			//Nice scroll to down
+		.scroll-down.text-center
+			i.glyphicon.glyphicon-menu-down
+			.clearfix
+			// End Header Info
+			// End Nav-Bar 
+	// End Header
+
+	// Start Services
+	section#service
+		.container
+			.row
+				// Print Design
+				.col-md-3.col-sm-6
+					.serv.text-center
+						i.fa.fa-fax.fa-5x
+						h3.text-uppercase Print Design
+						p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+
+				// Web Design
+				.col-md-3.col-sm-6
+					.serv.text-center
+						i.fa.fa-tv.fa-5x
+						h3.text-uppercase Web Design
+						p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+
+				// App Design
+				.col-md-3.col-sm-6
+					.serv.text-center
+						i.fa.fa-mobile.fa-5x
+						h3.text-uppercase App Design
+						p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				// Logo Design
+				.col-md-3.col-sm-6
+					.serv.text-center
+						i.fa.fa-pencil.fa-5x
+						h3.text-uppercase Logo Design
+						p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+		// End Services					
+	// Start Newsletter
+	section#newsletter
+		// Overlay background
+		.overlay
+			.container
+				// Input field
+				.col-sm-6.col-xs-12.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
+					input.form-control(type="email" placeholder="Enter Your email adress for newsletter...")
+				// Submit Button field
+				.col-sm-3.col-xs-12
+					button.form-control.text-uppercase: strong Subscribe
+		// End Newsletter
+		// Start Our Work
+	section#ourwork
+		.container
+			.row
+				// Text Info
+				.col-sm-6.col-sm-offset-3.col-md-offset-3.col-lg-offset-3.info
+					h2.h1.text-center.text-uppercase: strong Our 
+						span Works
+					p.text-center Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+				.clearfix
+				// First block of work
+				.col-sm-6.col-md-4
+					.image-holder
+						img.img-responsive(src="img/work/work-1.jpg" alt="").img-responsive.center-block
+					.image-holder
+						img.img-responsive(src="img/work/work-4.jpg" alt="").img-responsive.center-block
+
+				// Second block of work
+				.col-sm-6.col-md-4
+					.image-holder
+						img.img-responsive(src="img/work/work-2.jpg" alt="").img-responsive.center-block
+					.image-holder
+						img.img-responsive(src="img/work/work-5.jpg" alt="").img-responsive.center-block
+
+				// Third block of work
+				.col-sm-6.col-md-4.hidden-sm
+					.image-holder
+						img.img-responsive(src="img/work/work-3.jpg" alt="").img-responsive.center-block
+					.image-holder
+						img.img-responsive(src="img/work/work-6.jpg" alt="").img-responsive.center-block
+				// Start Hack fix in small screen
+				.col-sm-6.visible-sm
+					.image-holder
+						img.img-responsive(src="img/work/work-3.jpg" alt="").img-responsive.center-block
+
+				.col-sm-6.visible-sm
+					.image-holder
+						img.img-responsive(src="img/work/work-6.jpg" alt="").img-responsive.center-block
+				// End Hack fix in small screen
+				.clearfix
+
+				// Second set of work (hidden)
+				.set-2.hide
+					.col-sm-6.col-md-4
+						.image-holder
+							img.img-responsive(src="img/work/work-3.jpg" alt="").img-responsive.center-block
+					.col-sm-6.col-md-4
+						.image-holder
+							img.img-responsive(src="img/work/work-2.jpg" alt="").img-responsive.center-block
+					.col-sm-6.col-md-4
+						.image-holder
+							img.img-responsive(src="img/work/work-1.jpg" alt="").img-responsive.center-block
+
+			.show-more.text-center
+				a.text-uppercase(href="#aa") show More
+	// End Our Work
+	//Start Testimonials
+	section#testi
+		.overlay
+			.container
+				.client
+					.img-holder.text-center
+						img(src="https://s3.amazonaws.com/uifaces/faces/twitter/marcosmoralez/128.jpg" alt="client").img-responsive.center-block
+					.info.text-center
+						h3 These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+						span: strong John Smith
+				.client
+					.img-holder.text-center
+						img(src="https://s3.amazonaws.com/uifaces/faces/twitter/tomaslau/128.jpg" alt="client").img-responsive.center-block
+					.info.text-center
+						h3 Incridable! the work done in the time. Thanks.
+						span: strong Mike Steve
+				.client
+					.img-holder.text-center
+						img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="client").img-responsive.center-block
+					.info.text-center
+						h3 They understand me very well. Highly recommended!
+						span: strong Bill Smith
+
+				i.fa-angle-left.fa.fa-4x
+				i.fa-angle-right.fa.fa-4x
+
+	section#team 
+		.container
+			.row
+				// Text Info
+				.col-sm-6.col-sm-offset-3.col-md-offset-3.col-lg-offset-3.info
+					h2.h1.text-center.text-uppercase: strong Our 
+						span Team
+					p.text-center Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat,ad minim veniam.
+				.clearfix
+				.col-sm-6.col-md-3
+					.team.text-center.center-block
+						img(src="img/team/team-1.jpg").img-responsive.center-block
+						h2.text-uppercase Cathrin Gai
+						.social
+							a(href="#"): i.fa.fa-facebook.fa-2x
+							a(href="#"): i.fa.fa-twitter.fa-2x
+							a(href="#"): i.fa.fa-google.fa-2x
+						p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+				.col-sm-6.col-md-3
+					.team.text-center.center-block
+						img(src="img/team/team-2.jpg").img-responsive.center-block
+						h2.text-uppercase Harvey Rub
+						.social
+							a(href="#"): i.fa.fa-facebook.fa-2x
+							a(href="#"): i.fa.fa-twitter.fa-2x
+							a(href="#"): i.fa.fa-google.fa-2x
+						p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+				.visible-sm
+					.clearfix
+						
+				.col-sm-6.col-md-3
+					.team.text-center.center-block
+						img(src="img/team/team-3.jpg").img-responsive.center-block
+						h2.text-uppercase Janet Pris
+						.social
+							a(href="#"): i.fa.fa-facebook.fa-2x
+							a(href="#"): i.fa.fa-twitter.fa-2x
+							a(href="#"): i.fa.fa-google.fa-2x
+						p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+				.col-sm-6.col-md-3
+					.team.text-center.center-block
+						img(src="img/team/team-4.jpg").img-responsive.center-block
+						h2.text-uppercase Kevin Ward
+						.social
+							i.fa.fa-facebook.fa-2x
+							i.fa.fa-twitter.fa-2x
+							i.fa.fa-google.fa-2x
+						p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+	
+
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+	script(src="js/script.js")
